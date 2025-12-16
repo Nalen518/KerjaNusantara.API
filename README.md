@@ -217,5 +217,48 @@ This project is created for educational purposes as part of an OOP course final 
 - Uses Microsoft.Extensions.DependencyInjection for DI
 
 ---
+# KerjaNusantara.API
+
+The backend API for the KerjaNusantara application, built with ASP.NET Core.
+
+## Prerequisites
+
+- .NET 9.0 SDK
+
+## Getting Started
+
+1.  Navigate to the API directory:
+    ```bash
+    cd KerjaNusantara.API
+    ```
+
+2.  Restore dependencies:
+    ```bash
+    dotnet restore
+    ```
+
+3.  Run the application:
+    ```bash
+    dotnet run
+    ```
+
+## API Documentation
+
+The API Documentation is available via Swagger UI.
+Once the application is running, navigate to:
+`https://localhost:<port>/swagger`
+
+(Check the console output for the specific port, typically 5001 or similar).
+
+## Architecture
+
+This project follows a Clean Architecture approach:
+-   **KerjaNusantara.Domain**: Core entities.
+-   **KerjaNusantara.Repository**: Data access layer.
+-   **KerjaNusantara.Services**: Business logic layer.
+-   **KerjaNusantara.API**: Entry point, Controllers.
+
+
+
 
 **Note**: This is a console application designed to demonstrate OOP principles and design patterns. It uses JSON file storage for simplicity and educational purposes.
